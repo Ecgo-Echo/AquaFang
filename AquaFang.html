@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AquaFang | Thế Giới Cá Săn Mồi</title>
+    <style>
+        :root {
+            --red: #ff4d4d;
+            --dark: #0a0a0a;
+            --card: #161616;
+        }
+
+        body {
+            background-color: var(--dark);
+            color: #ffffff;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #1a1a1a;
+            padding: 50px 20px;
+            text-align: center;
+            border-bottom: 4px solid var(--red);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3.5rem;
+            color: var(--red);
+            letter-spacing: 5px;
+            text-transform: uppercase;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        .fish-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 25px;
+        }
+
+        .fish-card {
+            background: var(--card);
+            width: 350px;
+            border-radius: 15px;
+            border: 1px solid #333;
+            overflow: hidden;
+            transition: 0.3s;
+        }
+
+        .fish-card:hover {
+            border-color: var(--red);
+            transform: translateY(-8px);
+        }
+
+        .fish-card img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+        }
+
+        .fish-info {
+            padding: 20px;
+        }
+
+        .fish-info h3 {
+            color: var(--red);
+            margin: 0 0 10px 0;
+            font-size: 1.5rem;
+            border-bottom: 1px solid #333;
+            padding-bottom: 5px;
+        }
+
+        .fish-info p {
+            font-size: 0.9rem;
+            color: #ccc;
+            margin-bottom: 15px;
+        }
+
+        .env-box {
+            background: #222;
+            padding: 10px;
+            border-radius: 8px;
+            font-size: 0.85rem;
+            border-left: 3px solid var(--red);
+        }
+
+        .env-box strong { color: var(--red); }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            color: #555;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>AquaFang</h1>
+        <p>Thư viện 5 loài cá săn mồi đỉnh cao</p>
+    </header>
+
+    <div class="container">
+        <div class="fish-wrapper">
+
+            <div class="fish-card">
+                <img src="images/ca_hai_tuong_2_03be0dc5b8.jpg" alt="Cá Hải Tượng">
+                <div class="fish-info">
+                    <h3>Cá Hải Tượng</h3>
+                    <p>Gã khổng lồ vùng Amazon, là một trong những loài cá nước ngọt lớn nhất thế giới với vảy cực dày.</p>
+                    <div class="env-box">
+                        <strong>Môi trường:</strong> Bể cực lớn (>2000L) hoặc hồ xi măng. Nhiệt độ: 24-30°C. pH: 6.0-7.0.
+                    </div>
+                </div>
+            </div>
+
+            <div class="fish-card">
+                <img src="images/piranha-bung-do.jpg" alt="Piranha Bụng Đỏ">
+                <div class="fish-info">
+                    <h3>Piranha Bụng Đỏ</h3>
+                    <p>Nổi tiếng với bộ hàm sắc bén và tập tính săn mồi theo bầy đàn đầy uy lực.</p>
+                    <div class="env-box">
+                        <strong>Môi trường:</strong> Nuôi theo đàn (ít nhất 5 con). Ánh sáng yếu, nhiều cây thủy sinh hoặc lũa. pH: 5.5-7.0.
+                    </div>
+                </div>
+            </div>
+
+            <div class="fish-card">
+                <img src="images/ca-soi-den.jpg" alt="Cá Sói Đen">
+                <div class="fish-info">
+                    <h3>Cá Sói Đen</h3>
+                    <p>Kẻ săn mồi tiền sử với tính cách lì lợm và khả năng phục kích con mồi chớp nhoáng.</p>
+                    <div class="env-box">
+                        <strong>Môi trường:</strong> Bể có nhiều hang hốc, lũa đá để ẩn nấp. Ít ánh sáng. pH: 6.0-7.5. Nuôi đơn độc.
+                    </div>
+                </div>
+            </div>
+
+            <div class="fish-card">
+                <img src="images/Cá Hồng Vĩ Mỏ Vịt 2.jpg" alt="Hồng Vĩ Mỏ Vịt">
+                <div class="fish-info">
+                    <h3>Hồng Vĩ Mỏ Vịt</h3>
+                    <p>Loài cá da trơn có màu sắc rực rỡ ở đuôi, tính cách thân thiện nhưng cực kỳ phàm ăn.</p>
+                    <div class="env-box">
+                        <strong>Môi trường:</strong> Cần hệ thống lọc cực mạnh. Tầng đáy thoáng. Nhiệt độ: 22-28°C. pH: 6.5-7.5.
+                    </div>
+                </div>
+            </div>
+
+            <div class="fish-card">
+                <img src="images/ca-sau-hoa-tien-9.jpg" alt="Sấu Hỏa Tiễn">
+                <div class="fish-info">
+                    <h3>Sấu Hỏa Tiễn</h3>
+                    <p>Sinh vật có hình dáng như một quả tên lửa với bộ hàm dài, sức sống vô cùng mãnh liệt.</p>
+                    <div class="env-box">
+                        <strong>Môi trường:</strong> Bể dài, có nắp đậy (vì cá hay nhảy). Chịu được môi trường oxy thấp. pH: 6.0-8.0.
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2026 AquaFang - Đam mê cá săn mồi
+    </footer>
+
+</body>
+</html>
